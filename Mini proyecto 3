@@ -1,0 +1,16 @@
+print("BIENVENIDO!! \n")
+
+lista = []
+n = int(input("Ingresa el tamaño de la lista: "))
+for i in range(0, n):
+    print("Ingresa un numero para cada posición:", i)
+    rec = int(input())
+    lista.append(rec)
+
+    if (rec % 10 > 5):
+        rec = rec + 10
+    rec = rec / 10
+    rec = int(rec)
+    rec = rec * 10
+    print("El numero redondeado es: ",rec)
+print("Tu lista es: ", lista)
